@@ -9,18 +9,41 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    
+    var images:[UIImage] = [#imageLiteral(resourceName: "JohnWick"), #imageLiteral(resourceName: "Darkness"), #imageLiteral(resourceName: "Endgame"), #imageLiteral(resourceName: "Naruto"), #imageLiteral(resourceName: "IMBD")]
+    
+    var heading:[String] = ["Darkness", "Endgame", "IMBD", "JohnWick", "Naruto"]
+    
+    @IBOutlet weak var title1: UILabel!
+    var position = 0
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        var images:[UIImage] = [#imageLiteral(resourceName: "JohnWick"), #imageLiteral(resourceName: "Darkness"), #imageLiteral(resourceName: "Endgame"), #imageLiteral(resourceName: "Naruto"), #imageLiteral(resourceName: "IMBD")]
-        
-        var heading:[String] = ["Darkness", "Endgame", "IMBD", "JohnWick", "Naruto"]
         
         
-        var captions = []
+      
         
     }
-
+    
+    
+    
+    
+    @IBAction func next(_ sender: Any) {
+        
+        
+        if(position < images.count){
+            title1.text = heading[position]
+            imageView.image = images[position]
+            position += 1
+        }
+        else{
+            position = 0
+        }
+    }
+    
 
 }
 
