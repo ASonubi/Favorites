@@ -19,10 +19,11 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="SR2-iG-NdT">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Fr-MB-Kz7">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Fr-MB-Kz7">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="600" id="60S-Nl-Tmd"/>
+                                            <constraint firstAttribute="width" secondItem="6Fr-MB-Kz7" secondAttribute="height" multiplier="69:100" id="AGA-xs-wBw"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzA-gX-H2u">
@@ -53,7 +54,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="6Fr-MB-Kz7" id="UOl-bq-TBn"/>
-                        <outlet property="title" destination="fzA-gX-H2u" id="jMf-Aj-p03"/>
+                        <outlet property="title1" destination="fzA-gX-H2u" id="gFU-ix-0Ma"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     var images:[UIImage] = [#imageLiteral(resourceName: "JohnWick"), #imageLiteral(resourceName: "Darkness"), #imageLiteral(resourceName: "Endgame"), #imageLiteral(resourceName: "Naruto"), #imageLiteral(resourceName: "IMBD")]
     
-    var heading:[String] = ["Darkness", "Endgame", "IMBD", "JohnWick", "Naruto"]
+    var heading:[String] = ["JohnWick", "Darkness", "Endgame", "Naruto", "IMBD"]
     
     @IBOutlet weak var title1: UILabel!
     var position = 0
